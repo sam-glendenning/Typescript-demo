@@ -1,0 +1,10 @@
+coverage:
+  token: a4829c89-9306-4695-a33a-ed0afff48bd1
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 5
+    patch:
+      default:
+        target: 75
