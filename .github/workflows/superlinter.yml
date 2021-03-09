@@ -1,7 +1,11 @@
 name: Super-Linter
 
-# Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+  pull_request:
+  # By default, the pull_request event type is not triggered when a PR is merged into master
+  push:
+    branches:
+      - master
 
 jobs:
   # Set the job key. The key is displayed as the job name
