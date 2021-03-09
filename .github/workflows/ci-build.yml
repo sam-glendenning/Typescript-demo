@@ -34,6 +34,8 @@ jobs:
         run: npm install
       - name: Run linting
         run: yarn lint
+      - name: Run jest tests
+        run: yarn test
       - name: Upload unit test coverage
         if: success()
         uses: codecov/codecov-action@v1
